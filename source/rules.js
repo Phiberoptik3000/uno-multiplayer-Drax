@@ -3,11 +3,18 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * 0 => invaild move
  * 1 => normal value on value move
- * 2 => +2
- * 3 => skip
- * 4 => reverse
- * 5 => wild mystery color
- * 6 => +4
+ * 2 => +2  - ok
+ * 3 => skip - ok
+ * 4 => reverse - ok
+ * 5 => wild mystery color    - is this "wunschkarte"?
+ * 6 => +4  - is "Wunschkarte" included?
+ * ***Special-Cards***
+ * 7 => King-Eagle:exchange complete hand with other player  (not implemented) 
+ * 8 => Ice-Eagle: Player chosses color which all others have to play till he is back his turn  (not implemented) 
+ * 9 => Fake-Eagle: All players have to draw a card. Next player has to play the current color  (not implemented) 
+ * 10 => Helmet-Eagle: A card can only be played if its your last one, or if a special or action-card is active  (not implemented) 
+ * 11 => Beer-Eagle: The next player has to drink. (not implemented) 
+ * 12 => Schnapps-Eagle: All players have to drink. (not implemented) 
  */
 class Rules {
     constructor(card1, card2, currentColor) {
